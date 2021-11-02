@@ -1,4 +1,4 @@
-// import Add_Subscription from '../public/Add_Subscription.jpg'
+
 export const progress = [
     {
         id:836,

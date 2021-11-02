@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './Body.module.css'
 import { useGlobalContext } from '../../context'
 import Progress from './Progress/progress'
 import EmailSubscription from './emailSubs/emailSubscription'

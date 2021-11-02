@@ -1,7 +1,6 @@
 import React from 'react'
 // import Image from 'next/image'
 import profilePhoto from '../../public/profilePhoto.jpg'
-import { AiOutlineDown } from "react-icons/ai";
 import styles from '../../styles/Profile.module.css'
 function Profile() {
     return (

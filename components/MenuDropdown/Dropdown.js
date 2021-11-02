@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import ReactDOM from 'react-dom'
 import styles from './Dropdown.module.css'
-import AppMenuIcon from './AppMenuIcon.svg'
 import { useGlobalContext } from '../context';
 
 function Dropdown() {
