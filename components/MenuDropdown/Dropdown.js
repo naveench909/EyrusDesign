@@ -4,7 +4,7 @@ import styles from './Dropdown.module.css'
 import AppMenuIcon from './AppMenuIcon.svg'
 import { useGlobalContext } from '../context';
 
-function dropdown() {
+function Dropdown() {
 
     const { showModal , onClose , updateMenuValue , isBrowser , setIsBrowser} = useGlobalContext();
     
@@ -213,4 +213,4 @@ function dropdown() {
     }
 }
 
-export default dropdown
+export default Dropdown
