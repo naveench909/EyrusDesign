@@ -20,7 +20,7 @@ function Dropdown() {
     
     useEffect(()=>{
         setIsBrowser(true);
-    },[])
+    })
 
     const modalContent = showModal ? (
         <div className={styles.overlay} onClick={handleClose}>
