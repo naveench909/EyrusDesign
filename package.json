@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:prod": "next start -p 80",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
