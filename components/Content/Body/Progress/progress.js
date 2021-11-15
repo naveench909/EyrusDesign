@@ -51,28 +51,28 @@ function Progress({header , body}) {
 
         <div className={styles.table}>
             <div className={styles.headerItem}>
-                    {header.headerContent.map((item)=>{
-                        const {id , head} = item;
-                        return(
-                            <div className={styles.item} key={id}>
-                                <div className={styles.head}>{head}</div>
-                            </div>
-                        )
-                    })}
-                </div>
+                {header.headerContent.map((item)=>{
+                    const {id , head} = item;
+                    return(
+                        <div className={styles.item} key={id}>
+                            <div className={styles.head}>{head}</div>
+                        </div>
+                    )
+                })}
+            </div>
 
-                <div className={styles.bodyItem}>
-                    {body.bodyContent.map((item)=>{
-                    const {id , div, company , peopleCnt} = item;
-                        return(
-                            <div className={styles.item} key={id}>
-                                <div className={styles.div}>{div}</div>
-                                <div className={styles.company}>{company}</div>
-                                <div className={styles.peopleCnt}> {peopleCnt} </div>
-                            </div>
-                        )
-                    })}
-                </div>
+            <div className={styles.bodyItem}>
+                {body.bodyContent.map((item)=>{
+                const {id , div, company , peopleCnt} = item;
+                    return(
+                        <div className={styles.item} key={id}>
+                            <div className={styles.div}>{div}</div>
+                            <div className={styles.company}>{company}</div>
+                            <div className={styles.peopleCnt}> {peopleCnt} </div>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     </div>
     )

@@ -1,9 +1,6 @@
 .mainContainer{
-    /* position: absolute; */
     width: 216px;
-    height: calc(100% - 65px);
-    /* left: 0px;
-    top: 65px; */
+    height: 100%;
     border-right: 1px solid #D2D2D2;
     padding: 16px 16px;
 }

@@ -5,7 +5,7 @@ import EmailSubscription from './emailSubs/emailSubscription'
 
 function Body() {
 
-    const { emailSubscription , progress , sidebarValue, menuValue } = useGlobalContext();
+    const { emailSubscription , progress , menuValue } = useGlobalContext();
 
     let data;
     if(menuValue === "Project Setting"){
@@ -17,9 +17,9 @@ function Body() {
     const bodyContent = data[1];
 
     return (
-        <React.Fragment>
-            {data===emailSubscription? <EmailSubscription header={headerContent} body={bodyContent}/> : <Progress header={headerContent} body={bodyContent} /> }
-        </React.Fragment>
+        <div className="mainContainer">    
+            {data===emailSubscription ? <EmailSubscription header={headerContent} body={bodyContent}/> : <Progress header={headerContent} body={bodyContent} /> }
+        </div>
     )
 }
 

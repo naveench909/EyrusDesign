@@ -5,10 +5,12 @@
 
 .navbar{
   width: 100vw;
-  height: 64px;
+  height: 4rem;
 }
 
 .body{
-  height: calc(100vh - 64px);
-  width: 100%;
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  display: flex;
 }
+

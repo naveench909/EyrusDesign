@@ -79,7 +79,8 @@ export const progress = [
                 div:"Div 26",
                 company:"Ella's Electric",
                 peopleCnt:45
-            },
+            }
+            ,
             {
                 id:11,
                 div:"Div 26",
@@ -91,7 +92,8 @@ export const progress = [
                 div:"Div 26",
                 company:"Ella's Electric",
                 peopleCnt:45
-            },{
+            },
+            {
                 id:13,
                 div:"Div 26",
                 company:"Ella's Electric",
