@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './progress.module.css';
-import { DatePicker, Space } from 'antd';
+// import { DatePicker, Space } from 'antd';
+import DatePickerComponent from './DatePicker';
 import Filter from './Filter';
 import SearchBar from './SearchBar';
 import TableSetting from './TableSetting';
@@ -42,10 +43,11 @@ function Progress({header , body}) {
         </div>
 
         <div className={styles.btnSection}>
-            <DatePicker onChange={onChange} className={styles.datePicker} />
+            {/* <DatePicker onChange={onChange} className={styles.datePicker} /> */}
+            <DatePickerComponent />
             <Filter className={styles.filter} />
             <SearchBar />
-            <div style={{height:"32px" , width :"356px" , fontSize:"12px", fontWeight:"400px", marginLeft: "161px" , borderRadius:"4px" , padding:"5px 0px"}}>Updated at 19:34 EST</div>
+            <div style={{height:"32px" , width :"356px" , fontSize:"13px", fontWeight:"400px", marginLeft: "161px" , borderRadius:"4px" , padding:"5px 0px"}}>Updated at 19:34 EST</div>
             <TableSetting />
         </div>
 
@@ -55,7 +57,13 @@ function Progress({header , body}) {
                     const {id , head} = item;
                     return(
                         <div className={styles.item} key={id}>
-                            <div className={styles.head}>{head}</div>
+                            <div className={styles.head}>
+                                {head}
+                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 0L5.59808 4.5H0.401924L3 0Z" fill="#C4C4C4"/>
+                                    <path d="M3 12L0.401925 7.5L5.59808 7.5L3 12Z" fill="#C4C4C4"/>
+                                </svg>
+</div>
                         </div>
                     )
                 })}

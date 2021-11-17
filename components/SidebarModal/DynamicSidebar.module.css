@@ -44,16 +44,20 @@
 }
 .item:hover{
     cursor: pointer;
-    border-left: 5px solid #1890FF;
-    /* border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px; */
+    /* border-left: 5px solid #1890FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;  */
 }
 
 .section{
     width: 144px;
     height: 22px;
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
-    /* margin-left: 10px; */
+    line-height: 22px;
+    color: black;
 }
 
 
